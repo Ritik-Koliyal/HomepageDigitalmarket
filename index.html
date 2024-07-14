@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>homepage</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- 1st section -->
+  <section>
+    <div class="container my-5">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h5 class="text-danger">AWARD WINNING</h5>
+          <h1 class="display-4 font-weight-bold">DIGITAL MARKETING AGENCY</h1>
+          <p class="lead">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante et elit
+            fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum.</p>
+          <button id="contactUsButton" class="btn btn-danger">Contact Us</button>
+        </div>
+        <div class="col-md-6">
+          <img src="Images/1st img.jpg" alt="Marketing" class="img-fluid">
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form Modal -->
+    <div class="modal fade" id="contactFormModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header d-flex  justify-content-between">
+            <h5 class="modal-title" id="exampleModalLabel">Talk to us</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="workEmail">Work email*</label>
+                <input type="email" class="form-control" id="workEmail" name="workEmail" required>
+              </div>
+              <div class="form-row d-flex ">
+                <div class="form-group col-md-6 me-4">
+                  <label for="firstName">First name*</label>
+                  <input type="text" class="form-control" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="lastName">Last name*</label>
+                  <input type="text" class="form-control" id="lastName" name="lastName" required>
+                </div>
+              </div>
+              <div class="form-group form-check mt-4">
+                <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                <label class="form-check-label" for="termsCheck">I agree to Fyle's terms and conditions, and provide
+                  consent to send me communication.</label>
+              </div>
+              <button type="submit" class="btn btn-danger btn-block mt-4">Contact Us</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- slider section -->
+  <section id="slider-section">
+
+    <div class="container my-5">
+      <h3 class="text-danger">WHAT WE DO</h3>
+      <h1 class="font-weight-bold">SERVICES PROVIDE FOR YOU</h1>
+      <p class="lead">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante et elit
+        fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum.</p>
+
+      <div id="servicesCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="service-img-container">
+                  <img src="/Images/2nd img.jpg" alt="Service 1" class="img-fluid service-img">
+                  <div class="hover-overlay">
+                    <img src=" https://img.icons8.com/?size=100&id=6eg6v2SboVc8&format=png&color=000000" alt="webdev">
+                    <h4>WEB DEVELOPMENT</h4>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh.</p>
+                    <button class="btn btn-danger" onclick="window.open('https://fylehq.com', '_blank')">READ
+                      MORE</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="service-img-container">
+                  <img src="/Images/3rd Img.avif" alt="Service 2" class="img-fluid service-img">
+                  <div class="hover-overlay">
+                    <img src=" https://img.icons8.com/?size=100&id=6eg6v2SboVc8&format=png&color=000000" alt="webdev">
+                    <h4>WEB DEVELOPMENT</h4>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh.</p>
+                    <button class="btn btn-danger" onclick="window.open('https://fylehq.com', '_blank')">READ
+                      MORE</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="service-img-container">
+                  <img src="/Images/4th img.avif" alt="Service 3" class="img-fluid service-img">
+                  <div class="hover-overlay">
+                    <img src=" https://img.icons8.com/?size=100&id=6eg6v2SboVc8&format=png&color=000000" alt="web dev">
+                    <h4>WEB DEVELOPMENT</h4>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh.</p>
+                    <button class="btn btn-danger" onclick="window.open('https://fylehq.com', '_blank')">READ
+                      MORE</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="service-img-container">
+                  <img src="/Images/5th img.avif" alt="Service 4" class="img-fluid service-img">
+                  <div class="hover-overlay">
+                    <img src=" https://img.icons8.com/?size=100&id=6eg6v2SboVc8&format=png&color=000000" alt="web dev">
+                    <h4>WEB DEVELOPMENT</h4>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh.</p>
+                    <button class="btn btn-danger" onclick="window.open('https://fylehq.com', '_blank')">READ
+                      MORE</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Repeat similar structure for more carousel items -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="service-img-container">
+                  <img src="/Images/2nd img.jpg" alt="Service 1" class="img-fluid service-img">
+                  <div class="hover-overlay">
+                    <img src=" https://img.icons8.com/?size=100&id=6eg6v2SboVc8&format=png&color=000000" alt="webdev">
+                    <h4>WEB DEVELOPMENT</h4>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh.</p>
+                    <button class="btn btn-danger" onclick="window.open('https://fylehq.com', '_blank')">READ
+                      MORE</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="service-img-container">
+                  <img src="/Images/3rd Img.avif" alt="Service 2" class="img-fluid service-img">
+                  <div class="hover-overlay">
+                    <img src=" https://img.icons8.com/?size=100&id=6eg6v2SboVc8&format=png&color=000000" alt="webdev">
+                    <h4>WEB DEVELOPMENT</h4>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh.</p>
+                    <button class="btn btn-danger" onclick="window.open('https://fylehq.com', '_blank')">READ
+                      MORE</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="service-img-container">
+                  <img src="/Images/4th img.avif" alt="Service 3" class="img-fluid service-img">
+                  <div class="hover-overlay">
+                    <img src=" https://img.icons8.com/?size=100&id=6eg6v2SboVc8&format=png&color=000000" alt="web dev">
+                    <h4>WEB DEVELOPMENT</h4>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh.</p>
+                    <button class="btn btn-danger" onclick="window.open('https://fylehq.com', '_blank')">READ
+                      MORE</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="service-img-container">
+                  <img src="/Images/5th img.avif" alt="Service 4" class="img-fluid service-img">
+                  <div class="hover-overlay">
+                    <img src=" https://img.icons8.com/?size=100&id=6eg6v2SboVc8&format=png&color=000000" alt="web dev">
+                    <h4>WEB DEVELOPMENT</h4>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh.</p>
+                    <button class="btn btn-danger" onclick="window.open('https://fylehq.com', '_blank')">READ
+                      MORE</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-indicators-wrapper">
+            <ol class="carousel-indicators">
+              <li data-target="#servicesCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#servicesCarousel" data-slide-to="1"></li>
+              <li data-target="#servicesCarousel" data-slide-to="2"></li>
+              <li data-target="#servicesCarousel" data-slide-to="3"></li>
+            </ol>
+          </div>
+
+          <a class="carousel-control-prev" href="#servicesCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#servicesCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- why choose us -->
+  <section id="why-choose-us" class="my-5">
+    <div class="container text-center">
+      <h5 class="text-danger">WHY CHOOSE US</h5>
+      <h2 class="font-weight-bold">WHY WE ARE BEST</h2>
+      <div class="row mt-4">
+        <div class="col-md-3 col-sm-6">
+          <div class="feature">
+            <img src="https://img.icons8.com/ios/50/000000/target.png" alt="Clarified Vision & Target">
+            <h4 class="font-weight-bold mt-3">Clarified Vision & Target</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed diam nonumy.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="feature">
+            <img src="https://img.icons8.com/ios/50/000000/performance.png" alt="High Performance">
+            <h4 class="font-weight-bold mt-3">High Performance</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed diam nonumy.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="feature">
+            <img src="https://img.icons8.com/ios/50/000000/security-checked.png" alt="Maintain Security">
+            <h4 class="font-weight-bold mt-3">Maintain Security</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed diam nonumy.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="feature">
+            <img src="https://img.icons8.com/ios/50/000000/strategy-board.png" alt="Better Strategy & Quality">
+            <h4 class="font-weight-bold mt-3">Better Strategy & Quality</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed diam nonumy.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Project Section -->
+
+  <section id="our-project" class="my-5">
+    <div class="container text-center">
+      <h5 class="text-danger">OUR PROJECT</h5>
+      <h2 class="font-weight-bold">WHY WE ARE BEST</h2>
+      <div class="row mt-4">
+        <div class="col-md-6 project-section">
+          <img id="project-image" src="/Images/image1.avif" class="img-fluid" alt="Project Image">
+        </div>
+        <div class="col-md-6">
+          <div class="project-description p-3 mb-3" onclick="changeImage('image1.avif')">
+            <h4>Genderless Kei – Japan's Hot</h4>
+            <p>Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of...</p>
+          </div>
+          <div class="project-description p-3 mb-3" onclick="changeImage('image2.avif')">
+            <h4>Better Strategy & Quality</h4>
+            <p>Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of...</p>
+          </div>
+          <div class="project-description p-3 mb-3" onclick="changeImage('image3.avif')">
+            <h4>Genderless Kei – Japan's Hot</h4>
+            <p>Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Company Growth Section -->
+  <section id="our-company-growth" class="my-5">
+    <div class="container text-center">
+      <h5 class="text-danger">EXPERTS GROWTH</h5>
+      <h2 class="font-weight-bold">OUR COMPANY GROWTH</h2>
+      <div class="row mt-4">
+        <div class="col-md-3 col-sm-6">
+          <div class="growth-metric p-4">
+            <img src="https://img.icons8.com/ios-filled/50/ff4d4d/like.png" alt="Satisfied Customers">
+            <h4 class="font-weight-bold mt-3">199 +</h4>
+            <p>Satisfied Customers</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="growth-metric p-4">
+            <img src="https://img.icons8.com/ios-filled/50/ff4d4d/time.png" alt="Days Of Operation">
+            <h4 class="font-weight-bold mt-3">1591 +</h4>
+            <p>Days Of Operation</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="growth-metric p-4">
+            <img src="https://img.icons8.com/ios-filled/50/ff4d4d/checkmark.png" alt="Complete Project">
+            <h4 class="font-weight-bold mt-3">283 +</h4>
+            <p>Complete Projects</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="growth-metric p-4">
+            <img src="https://img.icons8.com/ios-filled/50/ff4d4d/trophy.png" alt="Win Awards">
+            <h4 class="font-weight-bold mt-3">75 +</h4>
+            <p>Win Awards</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feedback section -->
+
+  <section>
+    <div class="container text-center feedback">
+      <h5 class="text-danger">EXPERTS GROWTH</h5>
+      <h2 class="font-weight-bold">OUR COMPANY GROWTH</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas molestiae debitis fugiat quod perspiciatis natus
+        sed vitae ab exercitationem maiores. Sapiente rem suscipit dolor ipsa quos officiis nulla, quis quisquam!</p>
+
+      <div class="name">
+        <p>WILL JACKS <span class="text-muted">- CEO OF ENTERPRISES</span></p>
+      </div>
+    </div>
+  </section>
+
+  <Footer>
+
+    <div class="container">
+      <ul>
+        <li>
+          <span>HR</span>Harison Industry co
+        </li>
+        <li><span>DS</span> Design Studio</li>
+        <li><span>DE</span> Design Exclusive</li>
+        <li><span>FD</span> Fort Dexon</li>
+        <li> <span>BD</span> Barbecue</li>
+
+      </ul>
+    </div>
+
+  </Footer>
+
+  <!-- Link javascript and jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
