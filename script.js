@@ -23,5 +23,5 @@ $(document).ready(function () {
 });
 
 function changeImage(imageSrc) {
-  document.getElementById("project-image").src = `/Images/${imageSrc}`;
+  document.getElementById("project-image").src = `Images/${imageSrc}`;
 }
